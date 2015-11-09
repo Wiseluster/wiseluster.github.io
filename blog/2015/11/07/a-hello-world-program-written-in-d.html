@@ -1,9 +1,9 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
+
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <title>A hello world program written in D</title>
-
 <style type="text/css">
 <!--
 pre { white-space: pre-wrap; font-family: consolas; color: #000000; background-color: #ffffff; }
@@ -14,8 +14,8 @@ body { font-family: consolas; color: #000000; background-color: #ffffff; }
 .Type { color: #008000; }
 -->
 </style>
-</script>
 </head>
+
 <body>
 <pre id='vimCodeElement'>
 <span class="PreProc">import</span> std.stdio;
@@ -27,33 +27,4 @@ body { font-family: consolas; color: #000000; background-color: #ffffff; }
 </pre>
 </body>
 
-<style>
-<!--
-pre { white-space: pre-wrap; font-family: consolas; color: #000000; background-color: #ffffff; }
-body { font-family: consolas; color: #000000; background-color: #ffffff; }
-* { font-size: 1em; }
-.Constant { color: #c00000; }
-.Identifier { color: #008080; }
-.Statement { color: #804000; }
-.Type { color: #008000; }
--->
-</style>
-</script>
-</head>
-<body>
-<pre id='vimCodeElement'>
-<span class="Statement">section</span> <span class="Identifier">.data</span>
-    <span class="Identifier">msg</span> <span class="Type">db</span> <span class="Constant">&quot;Hello, world!&quot;</span>, <span class="Constant">13</span>, <span class="Constant">10</span>, <span class="Constant">&quot;$&quot;</span>
-
-<span class="Statement">section</span> <span class="Identifier">.text</span>
-    <span class="Statement">org</span> <span class="Constant">0100h</span>
-    <span class="Statement">mov</span> ah, <span class="Constant">09h</span>
-    <span class="Statement">mov</span> dx, <span class="Identifier">msg</span>
-    <span class="Statement">int</span> <span class="Constant">21h</span>
-    <span class="Statement">mov</span> ah, <span class="Constant">08h</span>
-    <span class="Statement">int</span> <span class="Constant">21h</span>
-    <span class="Statement">mov</span> ax, <span class="Constant">4C00h</span>
-    <span class="Statement">int</span> <span class="Constant">21h</span>
-</pre>
-</body>
 </html>
